@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html class="no-js">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title></title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="" />
+		<link type="text/css" media="print" rel="stylesheet" href="print.css" />
+
+		<style>
+			:root {
+				--space-sm: 16px;
+				--space-md: 32px;
+				--space-lg: 64px;
+
+				--fontSize-N1: 12px;
+				--lineHeight-N1: 16px;
+
+				--fontSize-0: 16px;
+				--lineHeight-0: 22px;
+
+				--fontSize-1: 24px;
+				--lineHeight-1: 32px;
+
+				--dimmed: 0.6;
+			}
+
+			* {
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+			}
+
+			.pagebreak {
+				page-break-before: always;
+			}
+
+			@page {
+				size: A4;
+			}
+
+			body {
+				margin: 0;
+				padding: 0 var(--space-lg) var(--space-lg) var(--space-lg);
+				font-size: var(--fontSize-0);
+				line-height: var(--lineHeight-0);
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica,
+					Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+					'Segoe UI Symbol';
+				color: #444;
+			}
+			@media screen and (max-width: 720px) {
+				body {
+					padding: 0 var(--space-md) var(--space-md) var(--space-md);
+				}
+			}
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h5,
+			p {
+				margin: 0;
+			}
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h5 {
+				font-weight: 600;
+			}
+			a,
+			a:visited {
+				color: inherit;
+				text-decoration-color: rgba(0, 0, 0, 0.3);
+			}
+			.section-title {
+				font-size: var(--fontSize-0);
+				line-height: var(--lineHeight-0);
+			}
+			.subsection-title {
+				font-size: var(--fontSize-1);
+				line-height: var(--lineHeight-1);
+			}
+			.layout {
+				display: grid;
+				grid-template-columns: 128px auto;
+				grid-gap: var(--space-md) 0px;
+			}
+			@media screen and (max-width: 720px) {
+				.layout {
+					grid-template-columns: auto;
+					grid-gap: var(--space-sm) 0px;
+				}
+			}
+			@media screen and (max-width: 720px) {
+				.hide-sm {
+					display: none;
+				}
+			}
+			/* .layout-left {} */
+			.layout-right {
+				grid-column-start: 2;
+				max-width: 400px;
+			}
+			@media screen and (max-width: 720px) {
+				.layout-right {
+					grid-column-start: 1;
+					max-width: 100%;
+				}
+			}
+			.subsection-title {
+				margin-bottom: var(--space-sm);
+			}
+			.section {
+				padding-top: var(--space-lg);
+			}
+			.section-title {
+				text-transform: uppercase;
+				font-size: var(--fontSize-N1);
+				line-height: var(--lineHeight-N1);
+				letter-spacing: 0.05em;
+			}
+			.project-description {
+				opacity: var(--dimmed);
+			}
+			.project-role {
+				opacity: var(--dimmed);
+			}
+			#progressbar {
+				background-color: #e9ecef;
+			}
+
+			#progressbar > div {
+				background-color: #1c58f2;
+				width: 40%;
+				height: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="section">
+			<div class="layout">
+				<div class="layout-left">
+					CV &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/
+				</div>
+				<div class="layout-right">
+					<b>Samuel Matias</b>
+					<br />
+					<br />
+					<p>
+						Eu trabalho como Desenvolvedor desde 2015.
+						<br class="hide-sm" />
+						De 2015 para cá, já trabalhei com Automação de Testes, Backend e
+						Frontend.
+						<br class="hide-sm" />
+						Desde de 2018 mudei meu foco para Desenvolvimento Mobile
+						Multiplataforma, usando tecnologias como Flutter e React Native.
+						<br />
+						<br />
+						<a href="mailto:hi@samuelematias.com">hi@samuelematias.com</a>
+						<br />
+						<a
+							href="https://samuelematias.com"
+							target="_blank"
+							rel="noopener noreferrer"
+							title="Show"
+							itemprop="website"
+						>
+							samuelematias.com
+						</a>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="pagebreak"></div>
+
+		<div class="section">
+			<div class="layout">
+				<div class="layout-right">
+					<h2 class="section-title">
+						Experiência
+					</h2>
+					<h3 class="subsection-title">
+						trabalhando internamente
+					</h3>
+				</div>
+			</div>
+
+			<div class="project-section">
+				<div class="layout">
+					<div class="layout-left">
+						<p>
+							Abr 2019 <br class="hide-sm" />
+							— presente
+						</p>
+					</div>
+					<div class="layout-right">
+						<p class="project-title">
+							iFood
+						</p>
+						<p class="project-role">
+							Software Engineer
+						</p>
+						<p class="project-description">
+							Desenvolvimento Mobile Multiplataforma com Flutter e React Native
+							e Desenvolvimento Nativo com Swift e Kotlin.
+						</p>
+					</div>
+
+					<div class="layout-left">
+						<p>
+							Fev 2019 <br class="hide-sm" />
+							— Abr 2019
+						</p>
+					</div>
+					<div class="layout-right">
+						<p class="project-title">
+							Mesa Mobile Thinking
+						</p>
+						<p class="project-role">
+							React Native Developer
+						</p>
+						<p class="project-description">
+							Desenvolvimento Mobile Multiplataforma com React Native.
+						</p>
+					</div>
+
+					<div class="layout-left">
+						<p>
+							Fev 2018 <br class="hide-sm" />
+							— Fev 2019
+						</p>
+					</div>
+					<div class="layout-right">
+						<p class="project-title">
+							Bemind
+						</p>
+						<p class="project-role">
+							React Native Developer
+						</p>
+						<p class="project-description">
+							Desenvolvimento Mobile Multiplataforma com React Native.
+						</p>
+					</div>
+
+					<div class="layout-left">
+						<p>
+							Jun 2015 <br class="hide-sm" />
+							— Jan 2018
+						</p>
+					</div>
+					<div class="layout-right">
+						<p class="project-title">
+							Accenture
+						</p>
+						<p class="project-role">
+							Software Engineer
+						</p>
+						<p class="project-description">
+							Desenvolvimento web usando Ruby on Rails no Backend and HTML/CSS/
+							JavaScript no Frontend.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="section">
+			<div class="layout">
+				<div class="layout-right">
+					<h2 class="section-title">
+						Experiência
+					</h2>
+					<h3 class="subsection-title">
+						projetos pessoais
+					</h3>
+				</div>
+			</div>
+
+			<div class="project-section">
+				<div class="layout">
+					<div class="layout-right">
+						<p>
+							Passo muito tempo trabalhando em projetos open source e side
+							projects que me ajudam a aprender e experimentar.
+							<br />
+							Aqui estão alguns dos meus projetos mais recentes:
+							<br />
+							<a
+								href="https://www.producthunt.com/posts/hackatrack-1"
+								target="_blank"
+								>hackatrack - Product Hunt</a
+							>.
+							<br />
+							<a
+								href="https://github.com/samuelematias/hacktrack"
+								target="_blank"
+								>hackatrack - código</a
+							>.
+							<br />
+							Mais projetos no Github:
+							<a href="https://github.com/samuelematias" target="_blank"
+								>github.com/samuelematias</a
+							>.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="pagebreak"></div>
+
+		<div class="section">
+			<div class="layout">
+				<div class="layout-right">
+					<h2 class="section-title">
+						Skills
+					</h2>
+					<h3 class="subsection-title">
+						Dart
+					</h3>
+					<div id="progressbar">
+						<div style="width: 75%;"></div>
+					</div>
+					<div style="padding-top: 20px;">
+						<h3 class="subsection-title">
+							Flutter
+						</h3>
+						<div id="progressbar">
+							<div style="width: 75%;"></div>
+						</div>
+					</div>
+					<div style="padding-top: 20px;">
+						<h3 class="subsection-title">
+							JavaScript
+						</h3>
+						<div id="progressbar">
+							<div style="width: 75%;"></div>
+						</div>
+					</div>
+					<div style="padding-top: 20px;">
+						<h3 class="subsection-title">
+							React Native
+						</h3>
+						<div id="progressbar">
+							<div style="width: 75%;"></div>
+						</div>
+					</div>
+					<div style="padding-top: 20px;">
+						<h3 class="subsection-title">
+							GraphQL
+						</h3>
+						<div id="progressbar">
+							<div style="width: 75%;"></div>
+						</div>
+					</div>
+					<div style="padding-top: 20px;">
+						<h3 class="subsection-title">
+							React Web
+						</h3>
+						<div id="progressbar">
+							<div style="width: 50%;"></div>
+						</div>
+					</div>
+					<div style="padding-top: 20px;">
+						<h3 class="subsection-title">
+							Gatsby
+						</h3>
+						<div id="progressbar">
+							<div style="width: 50%;"></div>
+						</div>
+					</div>
+					<div style="padding-top: 20px;">
+						<h3 class="subsection-title">
+							HTML/CSS
+						</h3>
+						<div id="progressbar">
+							<div style="width: 50%;"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="section">
+			<div class="layout">
+				<div class="layout-right">
+					<h2 class="section-title">
+						Idiomas
+					</h2>
+					<h3 class="subsection-title">
+						proficiência
+					</h3>
+					<div class="layout-right">
+						<p class="project-title">
+							Português
+						</p>
+						<p class="project-role">
+							Nativo.
+						</p>
+					</div>
+					<div class="layout-right" style="padding-top: 20px;">
+						<p class="project-title">
+							Inglês
+						</p>
+						<p class="project-role">
+							Intermediário.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="section">
+			<div class="layout">
+				<div class="layout-right">
+					<h2 class="section-title">
+						Educação
+					</h2>
+					<h3 class="subsection-title">
+						faculdade
+					</h3>
+				</div>
+			</div>
+			<div class="project-section">
+				<div class="layout">
+					<div class="layout-left">
+						<p>
+							Ago 2017 <br class="hide-sm" />
+							— presente
+						</p>
+					</div>
+					<div class="layout-right">
+						<p class="project-title">
+							Estacio
+						</p>
+						<p class="project-description">
+							Análise e desenvolvimento de sistemas.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="section">
+			<div class="layout">
+				<div class="layout-right">
+					<h2 class="section-title">
+						Hobbies
+					</h2>
+					<h3 class="subsection-title">
+						no meu tempo livre
+					</h3>
+				</div>
+			</div>
+
+			<div class="project-section">
+				<div class="layout">
+					<div class="layout-right">
+						<p>
+							Eu gosto de Escutar música, Jogar video game, Viajar, Assitir
+							filmes, séries, streams e Sair com amigos.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="pagebreak"></div>
+
+		<div class="section">
+			Obrigado.
+		</div>
+	</body>
+</html>
