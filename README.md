@@ -4,8 +4,6 @@
 
 [![Twitter Follow](https://img.shields.io/twitter/follow/samuelematias.svg?style=social)](https://twitter.com/samuelematias)
 
-[Acesse](https://samuelematias.github.io/cv-ptbr/)
-
 Nesse repo se encontra o CV em Português que fiz em HTML e o PDF dele.
 
 [Ver página](https://samuelematias.github.io/cv-ptbr/)
